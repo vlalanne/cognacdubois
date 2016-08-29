@@ -1,0 +1,243 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: 'CACChampagneRegular';
+	src: url('cac_champagne-webfont.eot');
+	src: url('cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+		url('cac_champagne-webfont.woff') format('woff'),
+		url('cac_champagne-webfont.ttf') format('truetype'),
+		url('cac_champagne-webfont.svg#CACChampagneRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FelipaRegular';
+	src: url('Felipa-Regular-webfont.eot');
+	src: url('Felipa-Regular-webfont.eot?#iefix')
+		format('embedded-opentype'), url('Felipa-Regular-webfont.woff')
+		format('woff'), url('Felipa-Regular-webfont.ttf') format('truetype'),
+		url('Felipa-Regular-webfont.svg#FelipaRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0px;
+	background-color: #FFFFA3;
+}
+
+h2 {
+	font-family: Georgia, "Trebuchet MS", sans-serif;
+	font-size: x-large;
+	text-align: center;
+}
+
+.header {
+	background-color: #280A00;
+	color: white;
+	text-align: center;
+}
+
+.headerpicture {
+	color: white;
+	text-decoration: none;
+	border: none;
+}
+
+.headermenu {
+	background-color: #641900;
+	color: white;
+	font-family: CACChampagneRegular, sans-serif;
+	font-size: x-large;
+	border-top: 4px double white;
+	border-bottom: 4px double white;
+}
+
+.hmenulink {
+	color: white;
+	text-decoration: none;
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+.hmenulink:HOVER {
+	text-decoration: underline;
+}
+
+.body {
+	background-color: #FFFFA3;
+	font-family: Georgia, "Trebuchet MS", sans-serif;
+	font-size: normal;
+	text-align: center;
+}
+
+.bodyLeftAlign {
+	background-color: #FFFFA3;
+	font-family: Georgia, "Trebuchet MS", sans-serif;
+	font-size: normal;
+	text-align: left;
+}
+
+.bottleName {
+	padding-top: 50px;
+	color: #641900;
+	font-family: FelipaRegular, sans-serif;
+	font-size: xx-large;
+}
+
+.bottleDescription {
+	padding-top: 50px;
+	vertical-align: top;
+}
+
+.productmenuborder {
+	border-right: 6px double #641900;
+}
+
+.productmenu {
+	color: #641900;
+	font-family: FelipaRegular, sans-serif;
+	font-size: large;
+	text-align: center;
+	border-top: 4px double #641900;
+	border-bottom: 4px double #641900;
+	text-decoration: none;
+	border-top: 4px double #641900;
+}
+
+.productmenu:HOVER {
+	text-decoration: underline;
+}
+
+.newsOverflow {
+	overflow: auto;
+	padding: 10px;
+	height: 600px;
+}
+
+.news {
+	border-color: #641900;
+	background-color: #FFCC66;
+	padding: 10px;
+	box-shadow: 5px 5px 10px #641900;
+	border-radius: 5px;
+	border-width: 2px;
+	border-style: solid;
+	padding: 10px;
+}
+
+.newsDate {
+	color: #641900;
+	font-family: FelipaRegular, sans-serif;
+	font-size: large;
+	text-align: left;
+	border-bottom: 4px double #641900;
+	text-decoration: none;
+}
+
+.footnoteReference {
+	font-family: Trebuchet MS, sans-serif;
+	text-align: left;
+	font-size: x-small;
+	color: gray;
+	text-decoration: none;
+	vertical-align: super;
+}
+
+.footnoteReference:HOVER {
+	text-decoration: underline;
+}
+
+.footnote {
+	font-family: Trebuchet MS, sans-serif;
+	text-align: left;
+	font-size: x-small;
+	padding-left: 2em;
+}
+
+.form {
+	font-family: Trebuchet MS, sans-serif;
+	text-align: left;
+}
+
+.receipt {
+	font-family: Trebuchet MS, sans-serif;
+	text-align: center;
+}
+
+.formTable {
+	text-align: center;
+}
+
+.onlyInPrint {
+	display: none;
+}
+
+@media print {
+	.noprint {
+		display: none;
+	}
+	.formTable {
+		font-size: small;
+	}
+	.onlyInPrint {
+		display: inline;
+	}
+}
+
+.orderText {
+	font-family: Trebuchet M, sans-serif;
+	padding: 1em;
+}
+
+.presentationTitle {
+	border-color: #641900;
+	background-color: #FFCC66;
+	padding: 10px;
+	box-shadow: 5px 5px 10px #641900;
+	border-radius: 5px;
+	border-width: 2px;
+	border-style: solid;
+	font-family: FelipaRegular, sans-serif;
+	font-size: xx-large;
+}
+
+.presentationContent {
+	border-color: #641900;
+	padding: 10px;
+	box-shadow: 5px 5px 10px #641900;
+	border-radius: 5px;
+	border-width: 2px;
+	border-style: solid;
+}
+
+.presentationPicture {
+	border-color: #641900;
+	box-shadow: 5px 5px 10px #641900;
+	border-radius: 5px;
+	border-width: 0px;
+	border-style: solid;
+}
+
+.presentation {
+	padding: 10px;
+	border-spacing: 10px
+}
+
+.newsName {
+	color: #641900;
+	font-family: FelipaRegular, sans-serif;
+	font-size: xx-large;
+}
+
+.newsDescription {
+	vertical-align: top;
+}
+
+.newsImage {
+	box-shadow: 5px 5px 10px black;
+	border-radius: 15px;
+	border-width: 0px;
+	border-style: solid;
+}
