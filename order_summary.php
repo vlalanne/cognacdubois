@@ -11,7 +11,7 @@
 		<td>Cognac VS</td>
 		<td>7 ans</td>
 		<td>70 cl</td>
-		<td>18,00€</td>
+		<td>18,50€</td>
 		<td><?php echo $_POST['qty_vs']; ?>
 		</td>
 		<td id="total_vs"><?php echo number_format($_POST['qty_vs']*$price_vs, 2); ?>€
@@ -21,7 +21,7 @@
 		<td>Cognac VSOP</td>
 		<td>12 ans</td>
 		<td>70 cl</td>
-		<td>24,00€</td>
+		<td>25,00€</td>
 		<td><?php echo $_POST['qty_vsop']; ?>
 		</td>
 		<td id="total_vsop"><?php echo number_format($_POST['qty_vsop']*$price_vsop, 2); ?>€</td>
@@ -30,14 +30,14 @@
 		<td>Cognac Napoléon</td>
 		<td>20 ans</td>
 		<td>70 cl</td>
-		<td>32,00€</td>
+		<td>33,00€</td>
 		<td><?php echo $_POST['qty_napoleon']; ?></td>
 		<td id="total_napoleon"><?php echo number_format($_POST['qty_napoleon']*$price_napoleon, 2); ?>€</td>
 	</tr>
 	<tr>
 		<td>Cognac XO <i>Bouteille</i>
 		</td>
-		<td>38 ans</td>
+		<td>40 ans</td>
 		<td>50 cl</td>
 		<td>47,00€</td>
 		<td><?php echo $_POST['qty_xo_bottle']; ?></td>
@@ -46,7 +46,7 @@
 	<tr>
 		<td>Cognac XO <i>Carafe</i>
 		</td>
-		<td>38 ans</td>
+		<td>40 ans</td>
 		<td>50 cl</td>
 		<td>50,00€</td>
 		<td><?php echo $_POST['qty_xo_s']; ?>
@@ -56,7 +56,7 @@
 	<tr>
 		<td>Cognac XO <i>Carafe</i>
 		</td>
-		<td>38 ans</td>
+		<td>40 ans</td>
 		<td>70 cl</td>
 		<td>66,00€</td>
 		<td><?php echo $_POST['qty_xo_l']; ?>
@@ -67,7 +67,7 @@
 		<td>Pineau Blanc</td>
 		<td></td>
 		<td>75 cl</td>
-		<td>9,00€</td>
+		<td>9,20€</td>
 		<td><?php echo $_POST['qty_pineau_white']; ?></td>
 		<td id="total_pineau_white"><?php echo number_format($_POST['qty_pineau_white']*$price_pineau_white, 2); ?>€</td>
 	</tr>
@@ -75,7 +75,7 @@
 		<td>Pineau Rosé</td>
 		<td></td>
 		<td>75 cl</td>
-		<td>9,20€</td>
+		<td>9,40€</td>
 		<td><?php echo $_POST['qty_pineau_red']; ?></td>
 		<td id="total_pineau_red"><?php echo number_format($_POST['qty_pineau_red']*$price_pineau_red, 2); ?>€</td>
 	</tr>
@@ -83,7 +83,7 @@
 		<td>Vieux Pineau Blanc</td>
 		<td>12 ans</td>
 		<td>75 cl</td>
-		<td>14,00€</td>
+		<td>14,50€</td>
 		<td><?php echo $_POST['qty_pineau_old']; ?></td>
 		<td id="total_pineau_old"><?php echo number_format($_POST['qty_pineau_red']*$price_pineau_old, 2); ?>€</td>
 	</tr>

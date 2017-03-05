@@ -1,11 +1,11 @@
 <?php
-$price_vs=18;
-$price_vsop=24;
-$price_napoleon=32;
+$price_vs=18.5;
+$price_vsop=25;
+$price_napoleon=33;
 $price_xo_bottle=47;
 $price_xo_s=50;
 $price_xo_l=66;
-$price_pineau_white=9;
-$price_pineau_red=9.2;
-$price_pineau_old=14;
+$price_pineau_white=9.2;
+$price_pineau_red=9.4;
+$price_pineau_old=14.5;
 ?>

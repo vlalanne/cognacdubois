@@ -41,7 +41,7 @@
 							<td>Cognac VS</td>
 							<td>7 ans</td>
 							<td>70 cl</td>
-							<td>18,00€</td>
+							<td>18,50€</td>
 							<td><input type="number" min="0" name="qty_vs" id="qty_vs"
 								value="0" onchange="updateTotal(this.id);" /></td>
 							<td id="total_vs">0,00€</td>
@@ -50,7 +50,7 @@
 							<td>Cognac VSOP</td>
 							<td>12 ans</td>
 							<td>70 cl</td>
-							<td>24,00€</td>
+							<td>25,00€</td>
 							<td><input type="number" min="0" name="qty_vsop" id="qty_vsop"
 								value="0" onchange="updateTotal(this.id);" /></td>
 							<td id="total_vsop">0,00€</td>
@@ -59,7 +59,7 @@
 							<td>Cognac Napoléon</td>
 							<td>20 ans</td>
 							<td>70 cl</td>
-							<td>32,00€</td>
+							<td>33,00€</td>
 							<td><input type="number" min="0" name="qty_napoleon"
 								id="qty_napoleon" value="0" onchange="updateTotal(this.id);" />
 							</td>
@@ -68,7 +68,7 @@
 						<tr>
 							<td>Cognac XO <i>Bouteille</i>
 							</td>
-							<td>38 ans</td>
+							<td>40 ans</td>
 							<td>50 cl</td>
 							<td>47,00€</td>
 							<td><input type="number" min="0" name="qty_xo_bottle"
@@ -79,7 +79,7 @@
 						<tr>
 							<td>Cognac XO <i>Carafe</i>
 							</td>
-							<td>38 ans</td>
+							<td>40 ans</td>
 							<td>50 cl</td>
 							<td>50,00€</td>
 							<td><input type="number" min="0" name="qty_xo_s" id="qty_xo_s"
@@ -89,7 +89,7 @@
 						<tr>
 							<td>Cognac XO <i>Carafe</i>
 							</td>
-							<td>38 ans</td>
+							<td>40 ans</td>
 							<td>70 cl</td>
 							<td>66,00€</td>
 							<td><input type="number" min="0" name="qty_xo_l" id="qty_xo_l"
@@ -100,7 +100,7 @@
 							<td>Pineau Blanc</td>
 							<td></td>
 							<td>75 cl</td>
-							<td>9,00€</td>
+							<td>9,20€</td>
 							<td><input type="number" min="0" name="qty_pineau_white"
 								id="qty_pineau_white" value="0"
 								onchange="updateTotal(this.id);" />
@@ -111,7 +111,7 @@
 							<td>Pineau Rosé</td>
 							<td></td>
 							<td>75 cl</td>
-							<td>9,20€</td>
+							<td>9,40€</td>
 							<td><input type="number" min="0" name="qty_pineau_red"
 								id="qty_pineau_red" value="0" onchange="updateTotal(this.id);" />
 							</td>
@@ -121,7 +121,7 @@
 							<td>Vieux Pineau Blanc</td>
 							<td>12 ans</td>
 							<td>75 cl</td>
-							<td>14,00€</td>
+							<td>14,50€</td>
 							<td><input type="number" min="0" name="qty_pineau_old"
 								id="qty_pineau_old" value="0" onchange="updateTotal(this.id);" />
 							</td>
