@@ -42,23 +42,23 @@ function getTotalId(qtyName) {
 function getUnitPrice(qtyName) {
     switch (qtyName) {
         case "qty_vs":
-            return 18.5;
+            return 19;
         case "qty_vsop":
-            return 25;
+            return 26;
         case "qty_napoleon":
-            return 33;
+            return 35;
         case "qty_xo_bottle":
-            return 47;
+            return 49;
         case "qty_xo_s":
-            return 50;
+            return 52;
         case "qty_xo_l":
-            return 66;
+            return 69;
         case "qty_pineau_white":
-            return 9.2;
+            return 9.5;
         case "qty_pineau_red":
-            return 9.4
+            return 9.7
         case "qty_pineau_old":
-            return 14.5;
+            return 15;
         default:
             return 0;
     }
