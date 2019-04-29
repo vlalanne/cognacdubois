@@ -1,0 +1,49 @@
+<h2>Panier</h2>
+<ng-container *ngIf="cart$ | async as cart">
+    <div *ngFor="let product of cart">
+        <button title="Clicker pour retirer le produit du panier" class="light" (click)="delete(product[0])"><i class="fas fa-times-circle"></i></button>
+        <span title="{{ product[1] }} x {{ product[0].price | currency:'EUR':'symbol':undefined:'fr'}}"> {{ product[1] }} {{ product[0].name }} : {{ product[1] * product[0].price | currency:'EUR':'symbol':undefined:'fr'}}</span>
+    </div>
+    <div>Total : {{ computeTotal(cart) | currency:'EUR':'symbol':undefined:'fr'}}</div>
+    <div class="form">
+        <label>
+        Nom* :
+        <input type="text" [(ngModel)]="lastName" required>
+    </label>
+        <label>
+        Prénom* :
+        <input type="text" [(ngModel)]="firstName" required>
+    </label>
+        <label>
+        Adresse* :
+        <textarea  [(ngModel)]="street" cols="50" rows="3" required></textarea>
+    </label>
+        <label>
+        Code Postal* :
+        <input type="text" [(ngModel)]="zipCode" required>
+    </label>
+        <label>
+        Ville* :
+        <input type="text" [(ngModel)]="city" required>
+    </label>
+        <label>
+        E-mail* :
+        <input type="email"  [(ngModel)]="email" required>
+    </label>
+        <label>
+        Téléphone :
+        <input type="tel" [(ngModel)]="phone" required>
+    </label>
+        <button title="Commander" [disabled]="!canOrder(cart)" (click)="order(cart)">Commander</button>
+    </div>
+</ng-container>
+<div class="disclaimer">
+    <p>Nos prix s'entendent toutes taxes et droits compris départ propriété.</p>
+    <p>Transport franco domicile France Métropolitainer pour expéridtion de 48 bouteilles et plus, groupées en une seule adresse.</p>
+    <p>Port dû pour expédition de 3, 6, 12, 24 & 36 bouteilles</p>
+    <p>Mode de paiement : à la commande par chèque bancaire.</p>
+    <p>Pour commande en fin d'année, nous vous conseillons de commander assez tôt, car le surcroît de travail de certains transporteurs est à prévoir.</p>
+    <p>Ces tarifs peuvent être modifié en cas d'augmentation des droits sur les alcools.</p>
+    <p>Les marchandises voyagent aux risques et périls du destinataire même lorsqu'elles sont expédiées contre remboursement ou franco.</p>
+    <p>En cas d'avarices, faites des réserves sur le bordereau de livraison et prévenez-nous immédiatement. Nous nous chargerons de faire remplacer la marchandise détériorée par le transporteurs</p>
+</div>

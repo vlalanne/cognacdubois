@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    --dark-background: #280A00;
+    --nav-background: #641900;
+    --light-background: #FFFFA3;
+    --title-background: #FFCC66;
+    --nav-foreground: white;
+}
+
+button {
+    background: var(--nav-background);
+    color: var(--nav-foreground);
+    font-size: 1em;
+    text-transform: uppercase;
+    box-shadow: .2em .2em .4em black;
+    border: 1px currentColor solid;
+    cursor: pointer;
+    padding: .2em .5em;
+}
+
+button:disabled {
+    background: darkgrey;
+    cursor: not-allowed;
+}

@@ -1,0 +1,29 @@
+:host {
+    display: flex;
+    flex: 1 1 auto;
+    padding: 1em;
+    flex-direction: row;
+    align-items: stretch;
+    justify-items: center;
+    color: var(--dark-background);
+    background-color: var(--light-background);
+    border-radius: .5em;
+}
+
+div.id-card {
+    flex: 1 1 auto;
+    padding-right: 1em;
+}
+
+div.id-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+div.id-card a {
+    color: var(--dark-background);
+}
+
+iframe.map {
+    flex: 0 0 auto;
+}

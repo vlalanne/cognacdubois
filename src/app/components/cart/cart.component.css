@@ -1,0 +1,46 @@
+:host {
+    display: flex;
+    flex: 1 1 auto;
+    padding: 1em;
+    flex-direction: column;
+    align-items: stretch;
+    justify-items: center;
+    color: var(--dark-background);
+    background-color: var(--light-background);
+    border-radius: .5em;
+}
+
+h2 {
+    margin: 0;
+    font-style: italic;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+button.light {
+    background: none;
+    color: var(--dark-foreground);
+    font-size: inherit;
+    box-shadow: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+div.form {
+    display: flex;
+    flex-direction: column;
+}
+
+div.form button {
+    margin: .5em;
+}
+
+div.disclaimer {
+    font-size: .7em;
+    font-style: italic;
+}
+
+div.disclaimer p {
+    margin: .4em 0;
+}

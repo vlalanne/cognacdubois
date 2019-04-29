@@ -1,0 +1,12 @@
+<ul class="toc bubble">
+    <li *ngFor="let topic of topics$ | async" (click)="select(topic)" [ngClass]="{'selected':topic.id == selectedTopic.id}">{{topic.name}} </li>
+</ul>
+
+<div class="details" *ngIf="selectedTopic">
+    <h2 class="bubble">{{ selectedTopic.name }}</h2>
+    <section class="bubble">
+        <p>{{ selectedTopic.description}}</p>
+    </section>
+    <img src="assets/img/presentation/{{selectedTopic.id}}_top.png">
+    <img src="assets/img/presentation/{{selectedTopic.id}}_bottom.png">
+</div>

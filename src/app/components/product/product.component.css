@@ -1,0 +1,62 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-items: center;
+    color: var(--dark-background);
+    background-color: var(--light-background);
+    border-radius: .5em;
+}
+
+:host>* {
+    margin: .5em;
+    padding: .5em;
+}
+
+:host>img {
+    flex: 0 0 auto;
+    border-radius: .8em;
+    background: white;
+    box-shadow: .4em .4em .6em black;
+    max-height: 10em;
+    padding: .5em;
+}
+
+:host>div {
+    flex: 1 1 auto;
+}
+
+:host>div h3 {
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+:host>div p {
+    font-size: 1.25em;
+}
+
+:host>dl {
+    flex: 0 0 10em;
+    border-left: 1px currentColor solid;
+}
+
+dl dt {
+    border-top: 1px currentColor solid;
+    padding-top: .5em;
+    font-size: .8em;
+}
+
+dl dd {
+    padding-bottom: .5em;
+    margin: 0;
+    font-weight: bold;
+}
+
+dl dd,
+dl dt {
+    padding-left: .5em;
+}
+
+dl dt:first-child {
+    border-top: 0;
+}

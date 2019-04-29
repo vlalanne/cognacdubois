@@ -1,0 +1,33 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img.logo {
+    margin: auto;
+}
+
+ul.routing {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: var( --nav-background);
+    border: .2em var(--nav-foreground) double;
+    border-left: 0;
+    border-right: 0;
+    margin: 0;
+    padding: .2em 6em;
+    width: 100%;
+}
+
+ul.routing a {
+    text-decoration: none;
+    margin: 0 1em;
+    color: var(--nav-foreground);
+}
+
+ul.routing a.active-link,
+ul.routing a:hover {
+    text-decoration: underline;
+}
