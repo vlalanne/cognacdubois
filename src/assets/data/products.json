@@ -56,7 +56,7 @@
     {
         "id": "napoleon",
         "name": "Cognac Napoléon",
-        "description": "Avec un âge de dégustation de 20 ans, sa couleur très ambrée est le signe d'un long séjour en fut de chêne. En effet l'harmonie qui règne dans ce cognac offre des notes fines. En bouche il apparaît beaucoup plus long. Seul ou accompagné d'un glacon, ce cognac est un feu d'artifice pour vos saveurs gustatives.",
+        "description": "Avec un âge de dégustation de 20 ans, sa couleur très ambrée est le signe d'un long séjour en fût de chêne. En effet l'harmonie qui règne dans ce cognac offre des notes fines. En bouche il apparaît beaucoup plus long. Seul ou accompagné d'un glacon, ce cognac est un feu d'artifice pour vos saveurs gustatives.",
         "price": 35,
         "aging": 20,
         "volume_cl": 70
@@ -64,7 +64,7 @@
     {
         "id": "xo_s",
         "name": "Cognac XO Carafe de 50cL",
-        "description": "Avec un âge de dégustation de 40 ans, c'est un peu notre réserve familiale. Son parfum très subtil assure des notes délicates. Mais c'est en bouche qu'il se révèle très équilibré, il prend place dans votre palais avec une grande délicatesse. Sa longueur en bouche vous permettra d'apprécier tout un panel d'arômes successifs très subtil.",
+        "description": "Avec un âge de dégustation de 40 ans, c'est un peu notre réserve familiale. Son parfum très subtil assure des notes délicates. Mais c'est en bouche qu'il se révèle très équilibré, il prend place dans votre palais avec une grande délicatesse. Sa longueur en bouche vous permettra d'apprécier tout un panel d'arômes successifs très subtils.",
         "price": 52,
         "aging": 44,
         "volume_cl": 50
@@ -72,7 +72,7 @@
     {
         "id": "xo_l",
         "name": "Cognac XO Carafe de 70cL",
-        "description": "Avec un âge de dégustation de 40 ans, c'est un peu notre réserve familiale. Son parfum très subtil assure des notes délicates. Mais c'est en bouche qu'il se révèle très équilibré, il prend place dans votre palais avec une grande délicatesse. Sa longueur en bouche vous permettra d'apprécier tout un panel d'arômes successifs très subtil.",
+        "description": "Avec un âge de dégustation de 40 ans, c'est un peu notre réserve familiale. Son parfum très subtil assure des notes délicates. Mais c'est en bouche qu'il se révèle très équilibré, il prend place dans votre palais avec une grande délicatesse. Sa longueur en bouche vous permettra d'apprécier tout un panel d'arômes successifs très subtils.",
         "price": 69,
         "aging": 44,
         "volume_cl": 70
@@ -80,7 +80,7 @@
     {
         "id": "xo_bottle",
         "name": "Cognac XO Bouteille",
-        "description": "Avec un âge de dégustation de 40 ans, c'est un peu notre réserve familiale. Son parfum très subtil assure des notes délicates. Mais c'est en bouche qu'il se révèle très équilibré, il prend place dans votre palais avec une grande délicatesse. Sa longueur en bouche vous permettra d'apprécier tout un panel d'arômes successifs très subtil.",
+        "description": "Avec un âge de dégustation de 40 ans, c'est un peu notre réserve familiale. Son parfum très subtil assure des notes délicates. Mais c'est en bouche qu'il se révèle très équilibré, il prend place dans votre palais avec une grande délicatesse. Sa longueur en bouche vous permettra d'apprécier tout un panel d'arômes successifs très subtils.",
         "price": 49,
         "aging": 44,
         "volume_cl": 50
