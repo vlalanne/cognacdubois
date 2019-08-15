@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-const KEY = "hide_disclaimer";
+const KEY = 'hide_disclaimer';
 
 @Component({
   selector: 'app-disclaimer',

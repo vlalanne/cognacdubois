@@ -10,7 +10,7 @@ import { ProductService } from './product.service';
 export class CartService {
 
   private storage: Storage;
-  private _cart: BehaviorSubject<number> = new BehaviorSubject(0);
+  private cart: BehaviorSubject<number> = new BehaviorSubject(0);
 
   constructor(private productService: ProductService) {
     this.storage = sessionStorage;
@@ -20,7 +20,7 @@ export class CartService {
     try {
       this.storage.setItem(this.toKey(id), `${Math.max(quantity, 0)}`);
     } finally {
-      this._cart.next(0);
+      this.cart.next(0);
     }
   }
 
@@ -33,7 +33,7 @@ export class CartService {
   }
 
   subscribe(): Observable<Cart> {
-    return this._cart.asObservable()
+    return this.cart.asObservable()
       .pipe(
         map(_ => this.getAll())
       );

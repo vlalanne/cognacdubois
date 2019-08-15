@@ -11,7 +11,7 @@ import { CartService, ProductService, OrderService } from '../../services';
 })
 export class CartComponent implements OnInit {
 
-  cart$: Observable<[Product, number][]>
+  cart$: Observable<[Product, number][]>;
 
   get lastName(): string {
     return sessionStorage.getItem('order_lastName') || '';
@@ -72,7 +72,7 @@ export class CartComponent implements OnInit {
   constructor(private cartService: CartService, private productService: ProductService, private orderService: OrderService) { }
 
   ngOnInit() {
-    this.cart$ = combineLatest(this.productService.getProducts(), this.cartService.subscribe())
+    this.cart$ = combineLatest([this.productService.getProducts(), this.cartService.subscribe()])
       .pipe(
         map(([products, cart]) => products.map(product => [product, cart[product.id] || 0] as [Product, number])
           .filter(element => element[1]))

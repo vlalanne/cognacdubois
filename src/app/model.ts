@@ -1,13 +1,13 @@
 export enum MedalSource {
-  CGA = "CGA",
-  SAVEURS_REGIONALLES = "SAVEURS_REGIONALLES",
-  SAVEURS_REGIONALLES_NOUVELLE_AQUITAINE = "SAVEURS_REGIONALLES_NOUVELLE_AQUITAINE"
+  CGA = 'CGA',
+  SAVEURS_REGIONALLES = 'SAVEURS_REGIONALLES',
+  SAVEURS_REGIONALLES_NOUVELLE_AQUITAINE = 'SAVEURS_REGIONALLES_NOUVELLE_AQUITAINE'
 }
 
 export enum MedalType {
-  GOLD = "GOLD",
-  SILVER = "SILVER",
-  BRONZE = "BRONZE",
+  GOLD = 'GOLD',
+  SILVER = 'SILVER',
+  BRONZE = 'BRONZE',
 }
 export interface Medal {
   readonly type: MedalType;
@@ -24,7 +24,7 @@ export interface Product {
   readonly medals: Medal[];
 }
 
-export type Cart = { [id: string]: number }
+export interface Cart { [id: string]: number; }
 
 export interface Topic {
   readonly id: string;
