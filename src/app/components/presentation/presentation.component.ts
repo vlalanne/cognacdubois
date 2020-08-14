@@ -16,7 +16,7 @@ export class PresentationComponent implements OnInit {
 
   constructor(private presentationService: PresentationService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.topics$ = this.presentationService.getPresentation()
       .pipe(tap(topics => this.selectedTopic = topics[0]));
   }

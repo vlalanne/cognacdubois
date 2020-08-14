@@ -13,11 +13,12 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
+                        "aot": true,
                         "outputPath": "dist/cognacdubois",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
-                        "tsConfig": "src/tsconfig.app.json",
+                        "tsConfig": "tsconfig.app.json",
                         "assets": [
                             "src/favicon.ico",
                             "src/assets",
@@ -28,8 +29,7 @@
                             "src/styles.css",
                             "node_modules/@fortawesome/fontawesome-free/css/all.css"
                         ],
-                        "scripts": [],
-                        "es5BrowserSupport": true
+                        "scripts": []
                     },
                     "configurations": {
                         "production": {
@@ -47,10 +47,15 @@
                             "vendorChunk": false,
                             "buildOptimizer": true,
                             "budgets": [{
-                                "type": "initial",
-                                "maximumWarning": "2mb",
-                                "maximumError": "5mb"
-                            }]
+                                    "type": "initial",
+                                    "maximumWarning": "2mb",
+                                    "maximumError": "5mb"
+                                },
+                                {
+                                    "type": "anyComponentStyle",
+                                    "maximumWarning": "6kb"
+                                }
+                            ]
                         }
                     }
                 },
@@ -71,29 +76,11 @@
                         "browserTarget": "cognacdubois:build"
                     }
                 },
-                "test": {
-                    "builder": "@angular-devkit/build-angular:karma",
-                    "options": {
-                        "main": "src/test.ts",
-                        "polyfills": "src/polyfills.ts",
-                        "tsConfig": "src/tsconfig.spec.json",
-                        "karmaConfig": "src/karma.conf.js",
-                        "styles": [
-                            "src/styles.css"
-                        ],
-                        "scripts": [],
-                        "assets": [
-                            "src/favicon.ico",
-                            "src/assets"
-                        ]
-                    }
-                },
                 "lint": {
                     "builder": "@angular-devkit/build-angular:tslint",
                     "options": {
                         "tsConfig": [
-                            "src/tsconfig.app.json",
-                            "src/tsconfig.spec.json"
+                            "tsconfig.app.json"
                         ],
                         "exclude": [
                             "**/node_modules/**"

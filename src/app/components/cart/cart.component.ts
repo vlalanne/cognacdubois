@@ -71,7 +71,7 @@ export class CartComponent implements OnInit {
 
   constructor(private cartService: CartService, private productService: ProductService, private orderService: OrderService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.cart$ = combineLatest([this.productService.getProducts(), this.cartService.subscribe()])
       .pipe(
         map(([products, cart]) => products.map(product => [product, cart[product.id] || 0] as [Product, number])
@@ -106,14 +106,14 @@ export class CartComponent implements OnInit {
       alert('Commande expédiée');
     });
   }
-  canOrder(cart: [Product, number][]) {
-    return (cart.reduce((total, product) => total + product[1], 0) > 0)
+  canOrder(cart: [Product, number][]): boolean {
+    return !!((cart.reduce((total, product) => total + product[1], 0) > 0)
       && this.lastName
       && this.firstName
       && this.street
       && this.zipCode
       && this.city
-      && this.email;
+      && this.email);
   }
 
 }

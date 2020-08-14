@@ -20,7 +20,7 @@ export class DisclaimerComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
   hide(): void {
