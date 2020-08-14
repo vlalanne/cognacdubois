@@ -4,18 +4,21 @@
     align-items: center;
 }
 
-img.logo {
-    margin: auto;
+h1 {
+    display: none;
+    color: var(--nav-foreground);
+    font-style: italic;
+    margin: .2em 0;
 }
 
 ul.routing {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     list-style: none;
     background-color: var( --nav-background);
-    border: .2em var(--nav-foreground) double;
-    border-left: 0;
-    border-right: 0;
+    border: 0 var(--nav-foreground) double;
+    border-width: .2em 0;
     margin: 0;
     padding: .2em 6em;
     width: 100%;
@@ -30,4 +33,10 @@ ul.routing a {
 ul.routing a.active-link,
 ul.routing a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    ul.routing {
+        padding: .2em;
+    }
 }

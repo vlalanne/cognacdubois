@@ -28,3 +28,16 @@ button:disabled {
     background: darkgrey;
     cursor: not-allowed;
 }
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .computer {
+        display: none !important;
+    }
+    .mobile {
+        display: initial !important;
+    }
+}

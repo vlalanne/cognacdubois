@@ -37,7 +37,8 @@
 
 :host>dl {
     flex: 0 0 10em;
-    border-left: 1px currentColor solid;
+    border: 0 currentColor solid;
+    border-width: 0 0 0 1px;
 }
 
 dl dt {
@@ -52,6 +53,16 @@ dl dd {
     font-weight: bold;
 }
 
+dl.cart dd {
+    display: flex;
+    flex-direction: row;
+}
+
+dl.cart dd input,
+dl.cart dd button {
+    flex: 1 1 auto;
+}
+
 dl dd,
 dl dt {
     padding-left: .5em;
@@ -59,4 +70,16 @@ dl dt {
 
 dl dt:first-child {
     border-top: 0;
+}
+
+@media (max-width: 600px) {
+     :host {
+        flex-direction: column;
+    }
+     :host>img {
+        align-self: center;
+    }
+     :host>dl {
+        border-width: 1px 0 0 0;
+    }
 }

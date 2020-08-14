@@ -36,6 +36,10 @@ div.form button {
     margin: .5em;
 }
 
+div.form textarea {
+    max-width: 100%;
+}
+
 div.disclaimer {
     font-size: .7em;
     font-style: italic;

@@ -24,9 +24,9 @@ div.router {
     flex: 1 1 auto;
     overflow: auto;
     justify-items: stretch;
-    margin-right: 1em;
 }
 
 app-cart {
     flex: 0 0 15vw;
+    margin-left: 1em;
 }
