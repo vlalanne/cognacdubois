@@ -2,7 +2,7 @@
         "id": "pineau_white",
         "name": "Pineau Blanc",
         "description": "En gastronomie, le Pineau des Charentes s'harmonise idéalement avec les mets les plus fins. Le Pineau blanc accompagnera avec délicatesse un foie gras et des fromages persillés (Roquefort, Bleu d'Auvergne ...).",
-        "price": 9.5,
+        "price": 9.6,
         "volume_cl": 75,
         "medals": [
             { "type": "GOLD", "source": "CGA", "year": 2016 },
@@ -15,14 +15,15 @@
         "id": "pineau_red",
         "name": "Pineau Rosé",
         "description": "En gastronomie, le Pineau des Charentes s'harmonise idéalement avec les mets les plus fins. Le Pineau rosé ou rouge revèlera le goût d'un melon, d'une coupe de fruits ou d'un sorbet, et exprimera tous ses arômes avec un dessert au chocolat.",
-        "price": 9.7,
+        "price": 9.8,
         "volume_cl": 75,
         "medals": [
             { "type": "GOLD", "source": "SAVEURS_REGIONALLES", "year": 2012 },
             { "type": "GOLD", "source": "SAVEURS_REGIONALLES", "year": 2013 },
             { "type": "SILVER", "source": "SAVEURS_REGIONALLES", "year": 2015 },
             { "type": "SILVER", "source": "SAVEURS_REGIONALLES_NOUVELLE_AQUITAINE", "year": 2018 },
-            { "type": "GOLD", "source": "CGA", "year": 2013 }
+            { "type": "GOLD", "source": "CGA", "year": 2013 },
+            { "type": "SILVER", "source": "CGA", "year": 2020 }
         ]
     },
     {
@@ -41,7 +42,7 @@
         "id": "vs",
         "name": "Cognac V.S.",
         "description": "Avec un âge de dégustation de 7 ans, ce VS a été conçu pour être bu en \"long drink\".",
-        "price": 15,
+        "price": 19,
         "aging": 7,
         "volume_cl": 75
     },
