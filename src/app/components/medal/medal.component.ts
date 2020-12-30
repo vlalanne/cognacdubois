@@ -19,6 +19,7 @@ export class MedalComponent implements OnInit {
       case MedalSource.CGA:
         return 'Concours Général Agricole';
       case MedalSource.SAVEURS_REGIONALLES:
+      case MedalSource.SAVEURS_REGIONALLES_2020:
       case MedalSource.SAVEURS_REGIONALLES_NOUVELLE_AQUITAINE:
         return 'Concours des Saveurs Régionales';
     }

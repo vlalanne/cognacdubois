@@ -7,7 +7,8 @@
         "medals": [
             { "type": "GOLD", "source": "CGA", "year": 2016 },
             { "type": "SILVER", "source": "SAVEURS_REGIONALLES", "year": 2017 },
-            { "type": "SILVER", "source": "CGA", "year": 2019 }
+            { "type": "SILVER", "source": "CGA", "year": 2019 },
+            { "type": "GOLD", "source": "SAVEURS_REGIONALLES_2020", "year": 2020 }
         ]
     },
     {
@@ -36,7 +37,8 @@
         "volume_cl": 75,
         "medals": [
             { "type": "SILVER", "source": "CGA", "year": 2014 },
-            { "type": "SILVER", "source": "CGA", "year": 2019 }
+            { "type": "SILVER", "source": "CGA", "year": 2019 },
+            { "type": "BRONZE", "source": "SAVEURS_REGIONALLES_2020", "year": 2020 }
         ]
     }, {
         "id": "vs",
