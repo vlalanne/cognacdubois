@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, BehaviorSubject, } from 'rxjs';
-import { map, tap } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 import { Cart } from '../model';
 import { ProductService } from './product.service';
 
@@ -49,6 +49,6 @@ export class CartService {
           result[id] = quantity;
         }
         return result;
-      }, {});
+      }, {} as { [id: string]: number });
   }
 }

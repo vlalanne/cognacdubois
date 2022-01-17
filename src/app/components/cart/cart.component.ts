@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable, combineLatest, zip } from 'rxjs';
-import { map, last } from 'rxjs/operators';
+import { Observable, combineLatest } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { Product } from '../../model';
 import { CartService, ProductService, OrderService } from '../../services';
 
@@ -11,7 +11,7 @@ import { CartService, ProductService, OrderService } from '../../services';
 })
 export class CartComponent implements OnInit {
 
-  cart$: Observable<[Product, number][]>;
+  cart$!: Observable<[Product, number][]>;
 
   get lastName(): string {
     return sessionStorage.getItem('order_lastName') || '';
@@ -100,7 +100,7 @@ export class CartComponent implements OnInit {
       cart: cart.reduce((result, [product, quantity]) => {
         result[product.id] = quantity;
         return result;
-      }, {})
+      }, {} as {[id: string]: number})
     }).subscribe(_ => {
       cart.forEach(([product, __]) => this.delete(product));
       alert('Commande expédiée');

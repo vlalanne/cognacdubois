@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 const KEY = 'hide_disclaimer';
 
@@ -7,7 +7,7 @@ const KEY = 'hide_disclaimer';
   templateUrl: './disclaimer.component.html',
   styleUrls: ['./disclaimer.component.css']
 })
-export class DisclaimerComponent implements OnInit {
+export class DisclaimerComponent {
 
 
   get hidden(): boolean {
@@ -19,9 +19,6 @@ export class DisclaimerComponent implements OnInit {
   }
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
   hide(): void {
     this.hidden = true;

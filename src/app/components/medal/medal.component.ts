@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Medal, MedalSource, MedalType } from '../../model';
 
 @Component({
@@ -6,10 +6,10 @@ import { Medal, MedalSource, MedalType } from '../../model';
   templateUrl: './medal.component.html',
   styleUrls: ['./medal.component.css']
 })
-export class MedalComponent implements OnInit {
+export class MedalComponent {
 
   @Input()
-  medal: Medal;
+  medal!: Medal;
 
   get longName(): string {
     return `Médaille ${this.typeName} du ${this.contestName} ${this.medal.year}`;
@@ -37,8 +37,4 @@ export class MedalComponent implements OnInit {
   }
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

@@ -10,7 +10,7 @@ import { Product } from '../../model';
 })
 export class ProductsComponent implements OnInit {
 
-  products$: Observable<Product[]>;
+  products$!: Observable<Product[]>;
 
   constructor(private productService: ProductService) { }
 

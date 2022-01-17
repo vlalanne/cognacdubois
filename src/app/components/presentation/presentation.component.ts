@@ -11,8 +11,8 @@ import { Topic } from '../../model';
 })
 export class PresentationComponent implements OnInit {
 
-  topics$: Observable<Topic[]>;
-  selectedTopic: Topic;
+  topics$!: Observable<Topic[]>;
+  selectedTopic!: Topic;
 
   constructor(private presentationService: PresentationService) { }
 
