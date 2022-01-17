@@ -10,7 +10,7 @@
     <dd>{{ product.volume_cl }}cl</dd>
     <ng-container *ngIf="product.aging">
         <dt>Viellissement:</dt>
-        <dd>{{product.aging}} ans</dd>
+        <dd><span *ngIf="product.minimumAging">Plus de </span>{{product.aging}} ans</dd>
     </ng-container>
     <ng-container *ngIf="product.medals">
         <dt>Médailles:</dt>

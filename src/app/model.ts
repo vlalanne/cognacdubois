@@ -21,6 +21,7 @@ export interface Product {
   readonly description: string;
   readonly price: number;
   readonly aging: number;
+  readonly minimumAging: boolean;
   readonly volume_cl: number;
   readonly medals: Medal[];
 }
