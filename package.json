@@ -1,6 +1,6 @@
 {
   "name": "cognacdubois",
-  "version": "2022.01.17",
+  "version": "2022.01.18",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
