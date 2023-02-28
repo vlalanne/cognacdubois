@@ -12,7 +12,12 @@ export class MedalComponent {
   medal!: Medal;
 
   get longName(): string {
-    return `Médaille ${this.typeName} du ${this.contestName} ${this.medal.year}`;
+
+    if (this.medal.source == MedalSource.GUIDE_HACHETTE_DES_VINS) {
+      return `Référencé dans le ${this.contestName} ${this.medal.year}${this.typeName}`;
+    } else {
+      return `Médaille ${this.typeName} du ${this.contestName} ${this.medal.year}`;
+    }
   }
   get contestName(): string {
     switch (this.medal.source) {
@@ -22,6 +27,8 @@ export class MedalComponent {
       case MedalSource.SAVEURS_REGIONALLES_2020:
       case MedalSource.SAVEURS_REGIONALLES_NOUVELLE_AQUITAINE:
         return 'Concours des Saveurs Régionales';
+      case MedalSource.GUIDE_HACHETTE_DES_VINS:
+        return 'Guide Hachette des Vins'
     }
   }
 
@@ -30,9 +37,13 @@ export class MedalComponent {
       case MedalType.GOLD:
         return 'd\'Or';
       case MedalType.SILVER:
-      return 'd\'Argent';
+        return 'd\'Argent';
       case MedalType.BRONZE:
         return 'de Bronze';
+      case MedalType.REFERENCE:
+        return '';
+      case MedalType.HEART_2_STARS:
+        return ' - 2 Etoiles, Coup de Coeur'
     }
   }
 
