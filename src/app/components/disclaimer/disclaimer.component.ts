@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 const KEY = 'hide_disclaimer';
 
 @Component({
+  standalone: false,
   selector: 'app-disclaimer',
   templateUrl: './disclaimer.component.html',
   styleUrls: ['./disclaimer.component.css']

@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule, registerLocaleData } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient } from '@angular/common/http';
 import localeFr from '@angular/common/locales/fr';
 
 import {
@@ -37,7 +37,6 @@ registerLocaleData(localeFr, 'fr');
   imports: [
     BrowserModule,
     CommonModule,
-    HttpClientModule,
     FormsModule,
     CognacduboisRoutingModule
   ],
@@ -45,7 +44,8 @@ registerLocaleData(localeFr, 'fr');
     CartService,
     OrderService,
     PresentationService,
-    ProductService
+    ProductService,
+    provideHttpClient()
   ],
   bootstrap: [CognacDuboisComponent]
 })

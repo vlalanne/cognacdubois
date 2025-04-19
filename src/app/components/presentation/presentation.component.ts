@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { PresentationService } from 'src/app/services';
+import { PresentationService } from '../../services';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { Topic } from '../../model';
 
 @Component({
+  standalone: false,
   selector: 'app-presentation',
   templateUrl: './presentation.component.html',
   styleUrls: ['./presentation.component.css']

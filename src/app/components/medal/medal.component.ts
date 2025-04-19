@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Medal, MedalSource, MedalType } from '../../model';
 
 @Component({
+  standalone: false,
   selector: 'app-medal',
   templateUrl: './medal.component.html',
   styleUrls: ['./medal.component.css']

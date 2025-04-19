@@ -5,6 +5,7 @@ import { Product } from '../../model';
 import { CartService, ProductService, OrderService } from '../../services';
 
 @Component({
+  standalone: false,
   selector: 'app-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']

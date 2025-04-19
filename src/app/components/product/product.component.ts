@@ -1,8 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { Product } from 'src/app/model';
-import { CartService } from 'src/app/services';
+import { Product } from '../../model';
+import { CartService } from '../../services';
 
 @Component({
+  standalone: false,
   selector: 'app-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
