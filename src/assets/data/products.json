@@ -2,14 +2,15 @@
         "id": "pineau_white",
         "name": "Pineau Blanc",
         "description": "En gastronomie, le Pineau des Charentes s'harmonise idéalement avec les mets les plus fins. Le Pineau blanc accompagnera avec délicatesse un foie gras et des fromages persillés (Roquefort, Bleu d'Auvergne ...).",
-        "price": 10.7,
+        "price": 11,
         "volume_cl": 75,
         "medals": [
             { "type": "GOLD", "source": "CGA", "year": 2016 },
             { "type": "SILVER", "source": "SAVEURS_REGIONALLES", "year": 2017 },
             { "type": "SILVER", "source": "CGA", "year": 2019 },
             { "type": "GOLD", "source": "SAVEURS_REGIONALLES_2020", "year": 2020 },
-            { "type": "BRONZE", "source": "CGA", "year": 2023 }
+            { "type": "BRONZE", "source": "CGA", "year": 2023 },
+            { "type": "GOLD", "source": "CGA", "year": 2024 }
         ]
     },
     {
@@ -17,7 +18,7 @@
         "id": "pineau_red",
         "name": "Pineau Rouge",
         "description": "En gastronomie, le Pineau des Charentes s'harmonise idéalement avec les mets les plus fins. Le Pineau rouge revèlera le goût d'un melon, d'une coupe de fruits ou d'un sorbet, et exprimera tous ses arômes avec un dessert au chocolat.",
-        "price": 10.9,
+        "price": 11.2,
         "volume_cl": 75,
         "medals": [
             { "type": "GOLD", "source": "SAVEURS_REGIONALLES", "year": 2012 },
@@ -35,65 +36,63 @@
         "id": "pineau_old",
         "name": "Vieux Pineau Blanc",
         "description": "En gastronomie, le Pineau des Charentes s'harmonise idéalement avec les mets les plus fins.",
-        "price": 17.5,
-        "aging": 14,
+        "price": 18,
+        "aging": 17,
         "volume_cl": 75,
         "medals": [
             { "type": "SILVER", "source": "CGA", "year": 2014 },
             { "type": "SILVER", "source": "CGA", "year": 2019 },
             { "type": "BRONZE", "source": "SAVEURS_REGIONALLES_2020", "year": 2020 },
             { "type": "HEART_2_STARS", "source": "GUIDE_HACHETTE_DES_VINS", "year": 2022 },
-            { "type": "SILVER", "source": "CGA", "year": 2023 }
+            { "type": "SILVER", "source": "CGA", "year": 2023 },
+            { "type": "GOLD", "source": "CGA", "year": 2024 }
         ]
     }, {
         "id": "vs",
         "name": "Cognac V.S.",
         "description": "Avec un âge de dégustation de 10 ans, ce VS a été conçu pour être bu en \"long drink\".",
-        "price": 22,
-        "aging": 10,
-        "volume_cl": 75
+        "price": 23,
+        "aging": 11,
+        "volume_cl": 70
     },
     {
         "id": "vsop",
         "name": "Cognac V.S.O.P.",
         "description": "Avec un âge de dégustation de 15 ans, d'une belle couleur ambrée, il possède un bouquet aromatique complexe. Ce VSOP peut être bu seul, accompagné d'un glacon ou encore avec Tonic ou Perrier.",
-        "price": 29,
-        "aging": 15,
+        "price": 30,
+        "aging": 17,
         "volume_cl": 70
     },
     {
         "id": "napoleon",
         "name": "Cognac Napoléon",
         "description": "Avec un âge de dégustation de 24 ans, sa couleur très ambrée est le signe d'un long séjour en fût de chêne. En effet l'harmonie qui règne dans ce cognac offre des notes fines. En bouche il apparaît beaucoup plus long. Seul ou accompagné d'un glacon, ce cognac est un feu d'artifice pour vos saveurs gustatives.",
-        "price": 39,
-        "aging": 24,
-        "volume_cl": 70
-    },
-    {
-        "id": "xo_s",
-        "name": "Cognac XO Carafe de 50cL",
-        "description": "Avec un âge de dégustation de plus de 40 ans, c'est un peu notre réserve familiale. Son parfum très subtil assure des notes délicates. Mais c'est en bouche qu'il se révèle très équilibré, il prend place dans votre palais avec une grande délicatesse. Sa longueur en bouche vous permettra d'apprécier tout un panel d'arômes successifs très subtils.",
-        "price": 56,
-        "aging": 40,
-        "minimumAging": true,
-        "volume_cl": 50
-    },
-    {
-        "id": "xo_l",
-        "name": "Cognac XO Carafe de 70cL",
-        "description": "Avec un âge de dégustation de plus de 40 ans, c'est un peu notre réserve familiale. Son parfum très subtil assure des notes délicates. Mais c'est en bouche qu'il se révèle très équilibré, il prend place dans votre palais avec une grande délicatesse. Sa longueur en bouche vous permettra d'apprécier tout un panel d'arômes successifs très subtils.",
-        "price": 75,
-        "aging": 40,
-        "minimumAging": true,
+        "price": 40,
+        "aging": 26,
         "volume_cl": 70
     },
     {
         "id": "xo_bottle",
         "name": "Cognac XO Bouteille",
         "description": "Avec un âge de dégustation de plus de 40 ans, c'est un peu notre réserve familiale. Son parfum très subtil assure des notes délicates. Mais c'est en bouche qu'il se révèle très équilibré, il prend place dans votre palais avec une grande délicatesse. Sa longueur en bouche vous permettra d'apprécier tout un panel d'arômes successifs très subtils.",
-        "price": 53,
-        "aging": 40,
-        "minimumAging": true,
+        "price": 54,
+        "aging": 50,
         "volume_cl": 50
+    },
+    {
+        "id": "xo_s",
+        "name": "Cognac XO Carafe de 50cL",
+        "description": "Avec un âge de dégustation de plus de 40 ans, c'est un peu notre réserve familiale. Son parfum très subtil assure des notes délicates. Mais c'est en bouche qu'il se révèle très équilibré, il prend place dans votre palais avec une grande délicatesse. Sa longueur en bouche vous permettra d'apprécier tout un panel d'arômes successifs très subtils.",
+        "price": 57,
+        "aging": 50,
+        "volume_cl": 50
+    },
+    {
+        "id": "xo_l",
+        "name": "Cognac XO Carafe de 70cL",
+        "description": "Avec un âge de dégustation de plus de 40 ans, c'est un peu notre réserve familiale. Son parfum très subtil assure des notes délicates. Mais c'est en bouche qu'il se révèle très équilibré, il prend place dans votre palais avec une grande délicatesse. Sa longueur en bouche vous permettra d'apprécier tout un panel d'arômes successifs très subtils.",
+        "price": 77,
+        "aging": 50,
+        "volume_cl": 70
     }
 ]
