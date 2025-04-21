@@ -1,8 +1,7 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes } from '@angular/router';
 import { ProductsComponent, ContactComponent, PresentationComponent, CartComponent } from './components';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: '', redirectTo: '/products', pathMatch: 'full'
   },
@@ -11,9 +10,3 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'cart', component: CartComponent },
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class CognacduboisRoutingModule { }

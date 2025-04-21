@@ -1,6 +1,7 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { bootstrapApplication } from '@angular/platform-browser';
 
-import { CognacduboisModule } from './app/cognacdubois.module';
+import { CognacDuboisComponent } from './app/components/cognacdubois/cognacdubois.component';
+import { appConfig } from './app/cognacdubois.config';
 
-platformBrowserDynamic().bootstrapModule(CognacduboisModule)
+bootstrapApplication(CognacDuboisComponent, appConfig)
   .catch(err => console.error(err));

@@ -1,12 +1,15 @@
 import { Component, Input } from '@angular/core';
 import { Product } from '../../model';
 import { CartService } from '../../services';
+import { NgIf, NgFor, CurrencyPipe } from '@angular/common';
+import { MedalComponent } from '../medal/medal.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  standalone: false,
-  selector: 'app-product',
-  templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css']
+    selector: 'app-product',
+    templateUrl: './product.component.html',
+    styleUrls: ['./product.component.css'],
+    imports: [NgIf, NgFor, MedalComponent, FormsModule, CurrencyPipe]
 })
 export class ProductComponent {
 

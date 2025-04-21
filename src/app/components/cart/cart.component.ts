@@ -3,12 +3,14 @@ import { Observable, combineLatest } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Product } from '../../model';
 import { CartService, ProductService, OrderService } from '../../services';
+import { NgIf, NgFor, AsyncPipe, CurrencyPipe } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  standalone: false,
-  selector: 'app-cart',
-  templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
+    selector: 'app-cart',
+    templateUrl: './cart.component.html',
+    styleUrls: ['./cart.component.css'],
+    imports: [NgIf, NgFor, FormsModule, AsyncPipe, CurrencyPipe]
 })
 export class CartComponent implements OnInit {
 

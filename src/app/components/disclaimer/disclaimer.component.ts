@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
+import { NgClass } from '@angular/common';
 
 const KEY = 'hide_disclaimer';
 
 @Component({
-  standalone: false,
-  selector: 'app-disclaimer',
-  templateUrl: './disclaimer.component.html',
-  styleUrls: ['./disclaimer.component.css']
+    selector: 'app-disclaimer',
+    templateUrl: './disclaimer.component.html',
+    styleUrls: ['./disclaimer.component.css'],
+    imports: [NgClass]
 })
 export class DisclaimerComponent {
 
