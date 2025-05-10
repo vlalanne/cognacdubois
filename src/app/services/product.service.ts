@@ -11,6 +11,6 @@ export class ProductService {
   constructor(private http: HttpClient) { }
 
   getProducts(): Observable<Product[]> {
-    return this.http.get('assets/data/products.json') as Observable<Product[]>;
+    return this.http.get(`assets/data/products.json?date=${Date.now()}`) as Observable<Product[]>;
   }
 }
