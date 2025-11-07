@@ -28,7 +28,8 @@
             { "type": "GOLD", "source": "CGA", "year": 2013 },
             { "type": "SILVER", "source": "CGA", "year": 2020 },
             { "type": "REFERENCE", "source": "GUIDE_HACHETTE_DES_VINS", "year": 2022 },
-            { "type": "SILVER", "source": "CGA", "year": 2023 }
+            { "type": "SILVER", "source": "CGA", "year": 2023 },
+            { "type": "REFERENCE", "source": "GUIDE_HACHETTE_DES_VINS_2026", "year": 2026 }
         ]
     },
     {
